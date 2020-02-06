@@ -15,7 +15,7 @@ from mynamespace.DLibSass import DLibSass
 scss_output = '../static/css/bundle.css'
 
 sass = Bundle('../assets/css/style.scss',
-            depends="../assets/css/**/*",
+            depends=["../assets/css/**/*.scss", "../assets/css/*.scss"],
             filters=DLibSass, output=scss_output)
 register('css_all', sass)
 ```
