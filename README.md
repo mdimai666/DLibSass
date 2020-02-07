@@ -12,7 +12,7 @@ copy file
 ```
 from mynamespace.DLibSass import DLibSass
 
-scss_output = '../static/css/bundle.css'
+scss_output = 'css/bundle.css' # /static/css
 
 sass = Bundle('../assets/css/style.scss',
             depends=["../assets/css/**/*.scss", "../assets/css/*.scss"],
